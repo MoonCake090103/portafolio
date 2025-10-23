@@ -17,7 +17,7 @@ jobs:
       - run: npm ci
       - run: npm run build
       
-   compilar:
+    compilar:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🔧 Compilando app..."

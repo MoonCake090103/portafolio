@@ -1,0 +1,19 @@
+name: Suma de dos números
+
+on:
+  push:
+    branches: [ main, master, develop ]  # se ejecutará cuando hagas push a estas ramas
+
+jobs:
+  sumar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Mostrar mensaje inicial
+        run: echo "Iniciando suma de 5 + 5..."
+
+      - name: Calcular suma
+        run: echo $((5 + 5))
+
+      - name: Mostrar resultado con texto
+        run: echo "El resultado de 5 + 5 es $((5 + 5))"

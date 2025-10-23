@@ -11,3 +11,6 @@ jobs:
       - name: If develop branch
         if: github.ref == 'refs/heads/develop'
         run: echo "This is the develop branch!"
+      - name: If main branch
+        if: github.ref == 'refs/heads/master'
+        run: echo $(pwd)

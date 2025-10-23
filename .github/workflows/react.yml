@@ -2,9 +2,9 @@ name: Build automático
 
 on:
   push:
-    branches: [ '**' ]
+    branches: [develop, master, feat/*]
   pull_request:
-    branches: [ '**'  ]
+    branches: [ develop, master ]
 
 jobs:
   build:

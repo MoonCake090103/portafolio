@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Educator JS Codespace Template",
   "source": "src/index.html",
-  "homepage": "https://MoonCake090103.github.io/educator-js-codespace-template/",
+  "homepage": "https://github.com/microsoft/codespaces-teaching-template-js#readme",
   "scripts": {
      "start": "parcel src/index.html",
     "build": "parcel build src/index.html",

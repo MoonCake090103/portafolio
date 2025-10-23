@@ -17,13 +17,13 @@ jobs:
       - run: npm ci
       - run: npm run build
       
-    compilar:
+   compilar:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🔧 Compilando app..."
   test:
     runs-on: ubuntu-latest
-    needs: build
+    needs: compilar
     steps:
       - run: echo "🧪 Ejecutando pruebas..."
   deploy:

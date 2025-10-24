@@ -7,10 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Imprimir mensaje
-        run: echo "Hola, GitHub Actions está vivo! 🚀"
+        run: echo "Hola, GitHub Actions está vivo! 🚀"
       - name: If develop branch
         if: github.ref == 'refs/heads/develop'
-        run: echo "This is the develop branch!"
+        run: echo "This is the develop branch!"
       - name: If main branch
         if: github.ref == 'refs/heads/master'
         run: echo $(pwd)
